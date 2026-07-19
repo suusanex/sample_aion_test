@@ -1,0 +1,60 @@
+lockfile_version: '1'
+generated_at: '2026-07-19T09:42:08.563859+00:00'
+apm_version: 0.18.0
+dependencies:
+- repo_url: suusanex/agent_skills_dotnet_utility
+  host: github.com
+  resolved_commit: 8f20bbdc5f2b071eaa6518e12ff039cf19b71d8e
+  virtual_path: .agents/skills/dotnet-file-based-apps
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/dotnet-file-based-apps
+  content_hash: sha256:f915ad8100702665872888bdede4363e60af398d1ab1f012176361de551b05de
+- repo_url: suusanex/codex_copilot_pr_review_agent
+  host: github.com
+  resolved_commit: 8c3a92b9d63dcf2384f07360e4f845ced0f02156
+  package_type: apm_package
+  deployed_files:
+  - .agents/skills/codex-copilot-pr-review-agent
+  - .codex/agents/local-reviewer.toml
+  - .codex/agents/review-planner.toml
+  - .codex/agents/spark-implementer.toml
+  deployed_file_hashes:
+    .codex/agents/local-reviewer.toml: sha256:f8357383ffbc1573464b2d03cefb85e4f972164c8366d1ee640f82790f198974
+    .codex/agents/review-planner.toml: sha256:714a6312e066eeb0bae17d85a8ba944745af77b9b8021e9c5cb34bb805f96875
+    .codex/agents/spark-implementer.toml: sha256:26b971a352bae664a2d0794ba6cf5a7ca72926777ff1e61c5f7f9e02a0f17cb9
+  content_hash: sha256:e379403237f32d262be52b5fdbb6f5b79c745072c7ba40d4d94ab13e25d6468a
+- repo_url: suusanex/coding_agent_plan_and_verify_process
+  host: github.com
+  resolved_commit: 41f0c8e53c4b750c163878b7a1fb20a9ec3a064a
+  virtual_path: apm-packages/adaptive-implementation-execution
+  is_virtual: true
+  package_type: apm_package
+  deployed_files:
+  - .agents/skills/adaptive-implementation-execution
+  content_hash: sha256:a73c194db4c25f38d67d285319d7a56fefe5b2f90f249a70156bfd72c32088a8
+- repo_url: suusanex/coding_agent_plan_and_verify_process
+  host: github.com
+  resolved_commit: 41f0c8e53c4b750c163878b7a1fb20a9ec3a064a
+  virtual_path: .github/agents/high-implementation-starter.agent.md
+  is_virtual: true
+  depth: 2
+  resolved_by: suusanex/coding_agent_plan_and_verify_process
+  deployed_files:
+  - .codex/agents/high-implementation-starter.toml
+  deployed_file_hashes:
+    .codex/agents/high-implementation-starter.toml: sha256:d7c9ad7c43309a01b2f93f34a61fde559a73ab8eff2055bd1551680f911af99c
+  content_hash: sha256:4d09fabbc201262e516e2af4d03e647e59fbfeb51d77c4af39481fc2ea015cc4
+- repo_url: suusanex/coding_agent_plan_and_verify_process
+  host: github.com
+  resolved_commit: 41f0c8e53c4b750c163878b7a1fb20a9ec3a064a
+  virtual_path: .github/agents/standard-implementation-completer.agent.md
+  is_virtual: true
+  depth: 2
+  resolved_by: suusanex/coding_agent_plan_and_verify_process
+  deployed_files:
+  - .codex/agents/standard-implementation-completer.toml
+  deployed_file_hashes:
+    .codex/agents/standard-implementation-completer.toml: sha256:a00d46c96dfb006cd0efad22a2d3f1168bb99e6d7c0607de1d218d629cb989fa
+  content_hash: sha256:665b5853d947e5edb26ff8526607f95d34f86b90bd2036393c702cecc4899704
