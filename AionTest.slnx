@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/AionTest.Web/AionTest.Web.csproj" />
+  <Project Path="tests/AionTest.Web.Tests/AionTest.Web.Tests.csproj" />
+</Solution>
