@@ -1,0 +1,76 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Aion Prompt API 評価";
+}
+
+<header>
+    <h1>Aion Prompt API 評価</h1>
+    <p>Edge の LanguageModel Prompt API をブラウザーから直接呼び出す、ローカル評価用アプリ。</p>
+</header>
+
+<section class="status-panel" aria-label="実行状態">
+    <div><strong>API:</strong> <span id="api-status">確認中</span></div>
+    <div><strong>Availability:</strong> <span id="availability-status">未確認</span></div>
+    <div><strong>Session:</strong> <span id="session-status">未作成</span></div>
+    <div><strong>実行:</strong> <span id="run-status">待機中</span></div>
+    <progress id="download-progress" max="1" value="0" hidden></progress>
+    <button id="prepare-session" type="button">モデルとセッションを準備</button>
+    <p id="status-message" role="status"></p>
+    <p id="error-message" class="error" role="alert" hidden></p>
+</section>
+
+<div class="two-columns">
+    <section aria-labelledby="settings-heading">
+        <h2 id="settings-heading">設定</h2>
+        <label for="system-prompt">System prompt</label>
+        <textarea id="system-prompt" rows="4">You are a helpful assistant. Reply in the language used by the user.</textarea>
+        <div class="parameter-grid">
+            <label for="temperature">Temperature <input id="temperature" type="number" step="0.01" /></label>
+            <label for="top-k">Top K <input id="top-k" type="number" step="1" /></label>
+        </div>
+        <p id="parameter-support" class="hint">パラメーター対応を確認中</p>
+        <label><input id="streaming" type="checkbox" checked /> ストリーミングを使用</label>
+        <div class="button-row">
+            <button id="reset-session" type="button">セッションをリセット</button>
+            <button id="clear-history" type="button">会話履歴をクリア</button>
+        </div>
+    </section>
+
+    <section aria-labelledby="evaluation-heading">
+        <h2 id="evaluation-heading">評価ケース</h2>
+        <label for="case-select">ケース</label>
+        <select id="case-select"><option value="">読み込み中</option></select>
+        <p id="case-details" class="hint"></p>
+        <label for="human-notes">人手評価メモ</label>
+        <textarea id="human-notes" rows="4" placeholder="品質、形式遵守、観察事項を記録する"></textarea>
+        <fieldset>
+            <legend>実行環境（手動確認）</legend>
+            <label for="edge-version">Edge バージョン <input id="edge-version" type="text" placeholder="例: 150.0.x Dev" /></label>
+            <label for="os-version">OS <input id="os-version" type="text" placeholder="例: Windows 11 24H2" /></label>
+            <label for="hardware">ハードウェア <input id="hardware" type="text" placeholder="CPU / RAM / GPU を手入力" /></label>
+            <label for="device-class">Device performance class <input id="device-class" type="text" /></label>
+            <label for="model-confirmation">モデル確認 <input id="model-confirmation" type="text" placeholder="edge://on-device-internals の確認結果" /></label>
+        </fieldset>
+    </section>
+</div>
+
+<section aria-labelledby="chat-heading">
+    <h2 id="chat-heading">会話</h2>
+    <div id="conversation" aria-live="polite"></div>
+    <label for="user-prompt">User prompt</label>
+    <textarea id="user-prompt" rows="5" placeholder="評価ケースを選ぶと、instruction と input をここへ展開する"></textarea>
+    <div class="button-row">
+        <button id="send-prompt" type="button">送信</button>
+        <button id="cancel-prompt" type="button" disabled>キャンセル</button>
+    </div>
+</section>
+
+<section aria-labelledby="export-heading">
+    <h2 id="export-heading">結果出力</h2>
+    <p id="record-count">記録: 0 件</p>
+    <div class="button-row">
+        <button id="download-json" type="button">JSON を保存</button>
+        <button id="download-markdown" type="button">Markdown を保存</button>
+    </div>
+</section>
