@@ -1,0 +1,776 @@
+{
+  "schemaVersion": "1.0",
+  "exportedAt": "2026-07-20T08:15:42.410Z",
+  "records": [
+    {
+      "schemaVersion": "1.0",
+      "executionId": "f16b9d8a-fd12-44ec-8e12-92f41d77108a",
+      "caseId": "en-ja-short",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:13:35.774Z",
+        "completedAt": "2026-07-20T08:13:37.488Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Translate the text into natural Japanese. Output only the translation.\n\nThe library closes at six o'clock.",
+        "chars": 106,
+        "evaluationCase": {
+          "id": "en-ja-short",
+          "category": "英日翻訳",
+          "language": "en-ja",
+          "size": "short",
+          "instruction": "Translate the text into natural Japanese. Output only the translation.",
+          "input": "The library closes at six o'clock.",
+          "expectedOutputFormat": "Japanese plain text",
+          "evaluationCriteria": [
+            "意味の保持",
+            "自然な日本語",
+            "固有表現の保持"
+          ],
+          "notes": "短文の基本翻訳"
+        }
+      },
+      "output": {
+        "text": "図書館は6時に閉館します。",
+        "chars": 13
+      },
+      "timings": {
+        "timeToFirstTextMs": 1304,
+        "totalMs": 1714
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "2961d66e-2a65-4cec-8a21-fa893145c8d7",
+      "caseId": "en-ja-medium",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:13:48.358Z",
+        "completedAt": "2026-07-20T08:13:49.232Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Translate the text into natural Japanese. Preserve the numbered list.\n\nBefore the release, complete these tasks: 1. Review the accessibility notes. 2. Verify the backup. 3. Tell the support team about the maintenance window.",
+        "chars": 224,
+        "evaluationCase": {
+          "id": "en-ja-medium",
+          "category": "英日翻訳",
+          "language": "en-ja",
+          "size": "medium",
+          "instruction": "Translate the text into natural Japanese. Preserve the numbered list.",
+          "input": "Before the release, complete these tasks: 1. Review the accessibility notes. 2. Verify the backup. 3. Tell the support team about the maintenance window.",
+          "expectedOutputFormat": "Japanese numbered list",
+          "evaluationCriteria": [
+            "意味の保持",
+            "番号形式の保持",
+            "自然な日本語"
+          ],
+          "notes": "リスト形式"
+        }
+      },
+      "output": {
+        "text": "1. 読み手のためのアクセス指示を確認してください。  \n2. バイダルを確認してください。  \n3. サポートチームにメンテナンス時間を知らせてください。",
+        "chars": 78
+      },
+      "timings": {
+        "timeToFirstTextMs": 325,
+        "totalMs": 874
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "41435654-25f3-4c08-b3b5-bb237593b15b",
+      "caseId": "en-ja-long",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:13:55.499Z",
+        "completedAt": "2026-07-20T08:13:57.297Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Translate the text into natural Japanese. Keep paragraph boundaries and do not add information.\n\nThe pilot started with a small group of volunteers. During the first week, they reported that the new search screen was faster, but several people could not find the filter controls. The team moved the controls closer to the results and added a short explanation. In the following week, successful searches increased while support requests declined.",
+        "chars": 446,
+        "evaluationCase": {
+          "id": "en-ja-long",
+          "category": "英日翻訳",
+          "language": "en-ja",
+          "size": "long",
+          "instruction": "Translate the text into natural Japanese. Keep paragraph boundaries and do not add information.",
+          "input": "The pilot started with a small group of volunteers. During the first week, they reported that the new search screen was faster, but several people could not find the filter controls. The team moved the controls closer to the results and added a short explanation. In the following week, successful searches increased while support requests declined.",
+          "expectedOutputFormat": "Japanese paragraphs",
+          "evaluationCriteria": [
+            "意味の保持",
+            "段落の保持",
+            "情報を追加しない"
+          ],
+          "notes": "複数文の翻訳"
+        }
+      },
+      "output": {
+        "text": " pilotoは初めて小さなグループのボランティアを運んでいました。初めての週で、新しい検索画面がより速く見つかったことを報告しましたが、いくつかの人々はフィルターコントロールを見つけにくかったと述べました。チームはコントロールを結果の近くに移動し、短い説明を追加しました。次の週で成功した検索が増え、サポートの問い合わせが減少しました。",
+        "chars": 169
+      },
+      "timings": {
+        "timeToFirstTextMs": 397,
+        "totalMs": 1797
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "da92fb0a-1469-4b31-9e0a-82bdfe14b8d4",
+      "caseId": "ja-en-short",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:14:02.758Z",
+        "completedAt": "2026-07-20T08:14:03.191Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Translate the text into clear English. Output only the translation.\n\n会議は午後三時に始まります。",
+        "chars": 83,
+        "evaluationCase": {
+          "id": "ja-en-short",
+          "category": "日英翻訳",
+          "language": "ja-en",
+          "size": "short",
+          "instruction": "Translate the text into clear English. Output only the translation.",
+          "input": "会議は午後三時に始まります。",
+          "expectedOutputFormat": "English plain text",
+          "evaluationCriteria": [
+            "意味の保持",
+            "自然な英語",
+            "時刻の保持"
+          ],
+          "notes": "短文の基本翻訳"
+        }
+      },
+      "output": {
+        "text": "The meeting starts at 3:00 PM.",
+        "chars": 30
+      },
+      "timings": {
+        "timeToFirstTextMs": 317,
+        "totalMs": 433
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "b3d5f1d5-36b8-466b-ac41-11a1ac9de7c5",
+      "caseId": "ja-en-long",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:14:09.126Z",
+        "completedAt": "2026-07-20T08:14:10.151Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Translate the text into clear English without omitting conditions.\n\nこの変更は通常の利用時間には適用しません。まず検証環境で二日間観察し、重大な問題がなければ次の定期メンテナンス時間に本番へ適用します。問題を見つけた場合は変更を止め、記録を添えて担当者へ連絡してください。",
+        "chars": 170,
+        "evaluationCase": {
+          "id": "ja-en-long",
+          "category": "日英翻訳",
+          "language": "ja-en",
+          "size": "long",
+          "instruction": "Translate the text into clear English without omitting conditions.",
+          "input": "この変更は通常の利用時間には適用しません。まず検証環境で二日間観察し、重大な問題がなければ次の定期メンテナンス時間に本番へ適用します。問題を見つけた場合は変更を止め、記録を添えて担当者へ連絡してください。",
+          "expectedOutputFormat": "English paragraph",
+          "evaluationCriteria": [
+            "条件の保持",
+            "否定の保持",
+            "自然な英語"
+          ],
+          "notes": "条件付き手順"
+        }
+      },
+      "output": {
+        "text": "This change is not applicable to the usual usage time. First, observe the environment for two days, and if no major issues are found, apply the next scheduled maintenance time. If problems are found, stop the change, record it, and contact the responsible person.",
+        "chars": 263
+      },
+      "timings": {
+        "timeToFirstTextMs": 384,
+        "totalMs": 1024
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "10133c46-3c62-4e76-81e6-06fd4c6f405e",
+      "caseId": "ja-summary-short",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:14:16.686Z",
+        "completedAt": "2026-07-20T08:14:17.662Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "次の文章を一文で要約してください。\n\n広報チームは来週の説明会に向けて資料を更新した。参加者からの質問を受け付けるフォームも公開し、回答は説明会の前日にまとめて共有する予定である。",
+        "chars": 90,
+        "evaluationCase": {
+          "id": "ja-summary-short",
+          "category": "日本語要約",
+          "language": "ja",
+          "size": "short",
+          "instruction": "次の文章を一文で要約してください。",
+          "input": "広報チームは来週の説明会に向けて資料を更新した。参加者からの質問を受け付けるフォームも公開し、回答は説明会の前日にまとめて共有する予定である。",
+          "expectedOutputFormat": "日本語一文",
+          "evaluationCriteria": [
+            "主要点の選択",
+            "一文制約",
+            "事実の正確さ"
+          ],
+          "notes": "一文要約"
+        }
+      },
+      "output": {
+        "text": "広報チームは来週の説明会に向けて資料を更新した。参加者からの質問を受け付けるフォームも公開し、回答は説明会の前日にまとめて共有する予定です。",
+        "chars": 70
+      },
+      "timings": {
+        "timeToFirstTextMs": 387,
+        "totalMs": 976
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "e70941f5-2482-4ad2-ba52-138615b13479",
+      "caseId": "ja-summary-medium",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:14:23.113Z",
+        "completedAt": "2026-07-20T08:14:24.507Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "次の議事メモを三つの箇条書きで要約してください。\n\n営業部は新しい提案書テンプレートを試用した。作成時間は短くなったが、顧客ごとの差別化が難しいという意見があった。来月までに選択可能な事例集を追加し、二社で再試用する。法務確認が必要な表現はテンプレートから削除する。",
+        "chars": 133,
+        "evaluationCase": {
+          "id": "ja-summary-medium",
+          "category": "日本語要約",
+          "language": "ja",
+          "size": "medium",
+          "instruction": "次の議事メモを三つの箇条書きで要約してください。",
+          "input": "営業部は新しい提案書テンプレートを試用した。作成時間は短くなったが、顧客ごとの差別化が難しいという意見があった。来月までに選択可能な事例集を追加し、二社で再試用する。法務確認が必要な表現はテンプレートから削除する。",
+          "expectedOutputFormat": "日本語の三つの箇条書き",
+          "evaluationCriteria": [
+            "重要事項の網羅",
+            "三項目制約",
+            "次の行動の保持"
+          ],
+          "notes": "議事メモ"
+        }
+      },
+      "output": {
+        "text": "営業部は新しい提案書テンプレートを試用した。作成時間は短くなったが、顧客ごとの差別化が難しいという意見があった。来月までに選択可能な事例集を追加し、二社で再試用する。法務確認が必要な表現はテンプレートから削除する。",
+        "chars": 107
+      },
+      "timings": {
+        "timeToFirstTextMs": 394,
+        "totalMs": 1394
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "a460818a-a8f3-4c51-9f99-e2d31be5ca48",
+      "caseId": "en-summary-short",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:14:31.821Z",
+        "completedAt": "2026-07-20T08:14:32.324Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Summarize the text in one English sentence.\n\nThe workshop was moved online because of heavy rain, and all registered participants received a new joining link.",
+        "chars": 158,
+        "evaluationCase": {
+          "id": "en-summary-short",
+          "category": "英語要約",
+          "language": "en",
+          "size": "short",
+          "instruction": "Summarize the text in one English sentence.",
+          "input": "The workshop was moved online because of heavy rain, and all registered participants received a new joining link.",
+          "expectedOutputFormat": "One English sentence",
+          "evaluationCriteria": [
+            "主要点の保持",
+            "一文制約",
+            "事実の正確さ"
+          ],
+          "notes": "一文要約"
+        }
+      },
+      "output": {
+        "text": "The workshop was moved online due to heavy rain, and all registered participants received a new joining link.",
+        "chars": 109
+      },
+      "timings": {
+        "timeToFirstTextMs": 265,
+        "totalMs": 503
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "ceceb37f-f57b-4e79-a70e-32ac01175f64",
+      "caseId": "en-summary-long",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:14:41.195Z",
+        "completedAt": "2026-07-20T08:14:42.359Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Write an English summary of no more than 60 words.\n\nA university tested a new room booking process for one semester. Students could see availability immediately, and double bookings fell. However, some groups reserved rooms they did not use. The university will add a reminder before each booking and will release unused rooms automatically after fifteen minutes. It will review usage data at the end of the next semester.",
+        "chars": 422,
+        "evaluationCase": {
+          "id": "en-summary-long",
+          "category": "英語要約",
+          "language": "en",
+          "size": "long",
+          "instruction": "Write an English summary of no more than 60 words.",
+          "input": "A university tested a new room booking process for one semester. Students could see availability immediately, and double bookings fell. However, some groups reserved rooms they did not use. The university will add a reminder before each booking and will release unused rooms automatically after fifteen minutes. It will review usage data at the end of the next semester.",
+          "expectedOutputFormat": "English summary of 60 words or fewer",
+          "evaluationCriteria": [
+            "語数制約",
+            "因果関係の保持",
+            "次の行動の保持"
+          ],
+          "notes": "制約付き要約"
+        }
+      },
+      "output": {
+        "text": "A university tested a new room booking process for one semester. Students could see availability immediately, and double bookings fell. However, some groups reserved rooms they did not use. The university will add a reminder before each booking and will release unused rooms automatically after fifteen minutes. It will review usage data at the end of the next semester.",
+        "chars": 370
+      },
+      "timings": {
+        "timeToFirstTextMs": 327,
+        "totalMs": 1164
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "d4b5b412-ea65-471d-b76a-f2c6912bfa04",
+      "caseId": "rewrite-short",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:14:54.110Z",
+        "completedAt": "2026-07-20T08:14:54.649Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "次の文を、社内連絡として丁寧で簡潔な日本語に書き換えてください。\n\n明日の朝までにこれ見て返事して。",
+        "chars": 50,
+        "evaluationCase": {
+          "id": "rewrite-short",
+          "category": "書き換え",
+          "language": "ja",
+          "size": "short",
+          "instruction": "次の文を、社内連絡として丁寧で簡潔な日本語に書き換えてください。",
+          "input": "明日の朝までにこれ見て返事して。",
+          "expectedOutputFormat": "丁寧な日本語一文",
+          "evaluationCriteria": [
+            "丁寧さ",
+            "簡潔さ",
+            "期限の保持"
+          ],
+          "notes": "敬語化"
+        }
+      },
+      "output": {
+        "text": "明日の朝までにこの件を確認して返答してください。",
+        "chars": 24
+      },
+      "timings": {
+        "timeToFirstTextMs": 361,
+        "totalMs": 539
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "b92e9929-8af7-4b41-9ac6-e9450482ee62",
+      "caseId": "rewrite-long",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:15:03.095Z",
+        "completedAt": "2026-07-20T08:15:04.271Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Rewrite the text as a concise, professional status update. Preserve all facts and uncertainty.\n\nWe changed the import job yesterday. It looks better now because the normal files finished, but two large files are still running and we do not know why they are slower. We are checking the logs and will post again after we know whether this is a problem with the files or with the new job.",
+        "chars": 386,
+        "evaluationCase": {
+          "id": "rewrite-long",
+          "category": "書き換え",
+          "language": "en",
+          "size": "long",
+          "instruction": "Rewrite the text as a concise, professional status update. Preserve all facts and uncertainty.",
+          "input": "We changed the import job yesterday. It looks better now because the normal files finished, but two large files are still running and we do not know why they are slower. We are checking the logs and will post again after we know whether this is a problem with the files or with the new job.",
+          "expectedOutputFormat": "Professional English status update",
+          "evaluationCriteria": [
+            "事実の保持",
+            "不確実性の保持",
+            "簡潔さ"
+          ],
+          "notes": "状況報告"
+        }
+      },
+      "output": {
+        "text": "We changed the import job yesterday. It looks better now because the normal files finished, but two large files are still running and we do not know why they are slower. We are checking the logs and will post again after we know whether this is a problem with the files or with the new job.",
+        "chars": 290
+      },
+      "timings": {
+        "timeToFirstTextMs": 406,
+        "totalMs": 1176
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "4c8ebbd4-d898-4fc2-b855-2d9a5bb384a3",
+      "caseId": "classification-medium",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:15:17.075Z",
+        "completedAt": "2026-07-20T08:15:17.585Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Classify the request as billing, technical, or account. Output JSON with only the key category.\n\nI can sign in, but the report page shows an error after I choose a date range. I tried two browsers and the same thing happened.",
+        "chars": 225,
+        "evaluationCase": {
+          "id": "classification-medium",
+          "category": "カテゴリ分類",
+          "language": "en",
+          "size": "medium",
+          "instruction": "Classify the request as billing, technical, or account. Output JSON with only the key category.",
+          "input": "I can sign in, but the report page shows an error after I choose a date range. I tried two browsers and the same thing happened.",
+          "expectedOutputFormat": "{\"category\": \"...\"}",
+          "evaluationCriteria": [
+            "分類の正確さ",
+            "JSON形式",
+            "余計な説明がない"
+          ],
+          "notes": "JSON分類"
+        }
+      },
+      "output": {
+        "text": "{\n  \"category\": \"technical\"\n}",
+        "chars": 29
+      },
+      "timings": {
+        "timeToFirstTextMs": 392,
+        "totalMs": 510
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "5353d415-312f-46a4-a62e-183fef1eaba7",
+      "caseId": "extract-medium",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:15:26.442Z",
+        "completedAt": "2026-07-20T08:15:27.012Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Extract the action, owner, and due date. Output only JSON with keys action, owner, dueDate. Use null when absent.\n\nMaya will update the onboarding guide by August 5. The security review is assigned to Carlos, but its deadline has not been decided.",
+        "chars": 247,
+        "evaluationCase": {
+          "id": "extract-medium",
+          "category": "情報抽出",
+          "language": "en",
+          "size": "medium",
+          "instruction": "Extract the action, owner, and due date. Output only JSON with keys action, owner, dueDate. Use null when absent.",
+          "input": "Maya will update the onboarding guide by August 5. The security review is assigned to Carlos, but its deadline has not been decided.",
+          "expectedOutputFormat": "JSON object or array",
+          "evaluationCriteria": [
+            "JSON形式",
+            "複数項目の正確さ",
+            "nullの扱い"
+          ],
+          "notes": "複数レコード"
+        }
+      },
+      "output": {
+        "text": "{\n  \"action\": \"update\",\n  \"owner\": \"Maya\",\n  \"dueDate\": null\n}",
+        "chars": 62
+      },
+      "timings": {
+        "timeToFirstTextMs": 251,
+        "totalMs": 570
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    },
+    {
+      "schemaVersion": "1.0",
+      "executionId": "1f2d66ac-303b-4c49-8714-926ad3d54986",
+      "caseId": "question-medium",
+      "timestamps": {
+        "startedAt": "2026-07-20T08:15:36.366Z",
+        "completedAt": "2026-07-20T08:15:37.750Z"
+      },
+      "environment": {
+        "edgeVersion": "152.0.4148.0 (公式ビルド) dev (64 ビット) ",
+        "os": "Windows 11 Version 25H2 (Build 26200.8875)",
+        "hardware": "",
+        "deviceClass": "",
+        "modelConfirmation": "",
+        "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+        "online": true
+      },
+      "availability": "available",
+      "settings": {
+        "systemPrompt": "You are a helpful assistant. Reply in the language used by the user.",
+        "temperature": null,
+        "topK": null,
+        "streaming": true
+      },
+      "input": {
+        "resolvedPrompt": "Answer in two short paragraphs. State assumptions when necessary.\n\nWhat are two practical steps a small team can take to reduce accidental data loss when working with shared documents?",
+        "chars": 184,
+        "evaluationCase": {
+          "id": "question-medium",
+          "category": "一般質問",
+          "language": "en",
+          "size": "medium",
+          "instruction": "Answer in two short paragraphs. State assumptions when necessary.",
+          "input": "What are two practical steps a small team can take to reduce accidental data loss when working with shared documents?",
+          "expectedOutputFormat": "Two English paragraphs",
+          "evaluationCriteria": [
+            "実用性",
+            "正確さ",
+            "段落制約"
+          ],
+          "notes": "助言型質問"
+        }
+      },
+      "output": {
+        "text": "A small team can implement version control by using tools like Git to track changes and prevent overwriting. They should also establish a clear naming convention for files and folders, ensuring that all team members understand and follow the same structure to avoid confusion and accidental deletion.\n\nAdditionally, the team can set up automated alerts or notifications for when files are modified or deleted, allowing them to respond quickly to potential data loss incidents.",
+        "chars": 476
+      },
+      "timings": {
+        "timeToFirstTextMs": 310,
+        "totalMs": 1384
+      },
+      "status": "success",
+      "error": null,
+      "humanNotes": ""
+    }
+  ]
+}
