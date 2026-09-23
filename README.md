@@ -46,6 +46,8 @@ JSON/Markdown の保存はブラウザーのみで実行し、ファイル名は
 
 実機での Aion 評価、オフライン状態の実測、性能・品質の結論はこのリポジトリの自動テスト対象外である。実機評価の観察方法と制約は [docs/evaluation-guide.md](docs/evaluation-guide.md) を参照する。
 
+2026年9月に同じ24ケースを再計測する場合は、[2026年9月 再計測手順](docs/evaluation-guide.md#2026年9月-再計測手順)に従う。2026年7月の比較基準ファイルは上書きせず、今回のJSON/Markdownを別名で `results/` に保存する。
+
 ## テスト
 
 Playwright テストは実 Edge/Aion を変更せず、ブラウザーに fake `LanguageModel` を注入する。.NET 用の独自 runner は作らず、ブラウザー側 ES module と fake `LanguageModel` を直接検証できる公式 Node Playwright を採用する。
